@@ -1,5 +1,5 @@
 {
-  "name": "e-cattle-remote",
+  "name": "mfe-remote-vue",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite --port 5005 --strictPort",

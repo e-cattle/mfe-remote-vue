@@ -1,70 +1,69 @@
-# Sobre o e-cattle-host
+# About
 
-Esta é a ferramenta oficial de *scaffolding* para a plataforma e-Cattle, projetada para lhe dar uma vantagem inicial na construção da sua nova aplicação microfrontend. Ela gera um modelo base para uma aplicação micro-frontend hospedeira com todas as configurações necessárias e estrutura de diretórios padrão, permitindo que você inicie o desenvolvimento sem o incômodo de configurar o projeto do zero.
+This is a template for a remote application, in which all the essential libraries and plugins are already installed, as well as all the necessary configurations for building an application with micro-frontend architecture and with all the resources of a progressive web application (PWA).
 
-Este é um *template* para uma aplicação remota (*Remote*), nele já estão instaladas todas as bibliotecas e os *plugins* indispensáveis, bem como foram feitas todas as configurações necessárias para a construção de uma aplicação com arquitetura micro-frontend e com todos os recursos de uma aplicação progressiva *web* (PWA). 
+## ✨ Features
 
-## ✨ Características
+This project was developed using:
 
-Este projeto foi desenvolvido utilizando:
 - JavaScript
 - Vue.js
 - Vutify
 - Vite
-- Arquitetura Micro-frontend
-- *Progressive Web App* (PWA)
+- Micro-frontend architecture
+- Progressive Web App (PWA)
 
-Além disso, para manter o padrão de codificação do projeto temos os seguintes módulos instalados e configurados:
+In addition, to maintain the project's coding standard, we have the following modules installed and configured:
+
 - Husk
 - Prettier
 - Eslint
 - Commitlint
 
-Para que esta seja uma aplicação com arquitetura de Micro-frontends com recursos de PWA foi necessário instalar alguns módulos externos, quais sejam:
+In order for this to be an application with Micro-frontend architecture with PWA features, it was necessary to install some external modules, namely:
+
 - [vite-plugin-federation](https://github.com/originjs/vite-plugin-federation)
 - [Vite PWA](https://vite-pwa-org.netlify.app/)
 
-A instalação e configuração adequada de cada um desses *plugins* irão garantir o adequado funcionamento de uma aplicação com as características descritas anteriomente.
+The proper installation and configuration of each of these plugins will ensure the proper functioning of an application with the features described above.
 
-## 👩🏿‍💻 Pós instalação
+## 👩🏿‍💻 Post-installation
 
-Este *template* executará sem a necessidade de qualquer alteração ou ajuste em seu código. Ele acompanha um compoenete simples para teste, podendo ser excluído ou reaproveitado conforme necessidade ou vontade. Ele já está exposto no arquivo `config.federation.js` contido na raiz do projeto: 
+This _template_ will run without the need for any changes or adjustments to your code. It comes with a simple component for testing, which can be deleted or reused as needed or desired. It is already exposed in the `config.federation.js` file contained in the project root:
 
 ```javascript
-// config.federation da aplicação remota
+// config.federation of the remote application
 export default {
-  name: 'e_cattle_remote',
+  name: 'mferemote-vue',
   filename: 'remoteEntry.js',
   exposes: {
-    // componente sendo exposto
+    // component being exposed
     './ComponentApp1': './src/pages/index.vue'
   },
   shared: ['vue', 'vuetify']
 }
 ```
 
-Tudo que foi desenvolvido em `ComponentApp1` será mostrado na aplicação hospedeira com todos os recursos e funcionalidades definidos na aplicação remota.
+Everything that was developed in `ComponentApp1` will be displayed in the host application with all the resources and functionalities defined in the remote application.
 
-Neste projeto você pode criar um micro-frontend com as funcionalidades que desejar e expor ele para que seja usado por uma aplicação hospedeira. Lembrando que em arquitetura micro-frontends poderão ser criados quantas aplicações remotas sejam necessárias para compor a aplicação completa.
+In this project, you can create a micro-frontend with the features you want and expose it to be used by a host application. Remember that in micro-frontend architecture, you can create as many remote applications as necessary to compose the complete application.
 
+## Contribute 🚀
 
-## Contribuir 🚀
-
-Se quiser contribuir, clone este repositório, crie sua própria *branch* de trabalho e mãos à obra!
+If you want to contribute, clone this repository, create your own working branch and get to work!
 
 ```bash
-git clone https://github.com/andre-violin/e-cattle-remote.git
+git clone https://github.com/e-cattle/mfe-remote-vue.git
 ```
 
 ```bash
 git checkout -b feature/NAME
 ```
 
-No final, abra um *Pull Request* explicando o problema resolvido ou a funcionalidade adicionada. Se existir, adicione capturas de tela das modificações visuais e aguarde pela revisão!
+At the end, open a _Pull Request_ explaining the problem solved or the feature added. If there is one, add screenshots of the visual changes and wait for the review!
 
-[Como criar uma Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request) |
-[Padrão de Commits](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+[How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request) | [Commit Pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
-## Licença 📃
+## License 📃
 
-Este projeto está sob a licença [MIT](./LICENSE) license
+This project is licensed under the [MIT](./LICENSE) license
