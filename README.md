@@ -1,4 +1,6 @@
-# About
+# mfe-remote-vue
+
+## About
 
 This is a template for a remote application, in which all the essential libraries and plugins are already installed, as well as all the necessary configurations for building an application with micro-frontend architecture and with all the resources of a progressive web application (PWA).
 
